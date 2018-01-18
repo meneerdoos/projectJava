@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectjava.BoardController">
+   <children>
+      <Canvas fx:id="boardCanvas" height="600.0" width="800.0" />
+      <Canvas fx:id="spelerCanvas" height="600.0" width="800.0" />
+      <ImageView fitHeight="83.0" fitWidth="83.0" layoutX="703.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/portretmini.png" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="healthBar" layoutX="46.0" layoutY="25.0" prefHeight="18.0" prefWidth="602.0" progress="1.0" style="-fx-accent: red;">
+         <effect>
+            <DropShadow color="#ff0505" />
+         </effect>
+      </ProgressBar>
+      <ImageView fitHeight="36.0" fitWidth="24.0" layoutX="668.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/hart.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="naamLabel" alignment="CENTER_RIGHT" layoutX="125.0" layoutY="59.0" prefHeight="24.0" prefWidth="567.0" text="Naam" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic Medium" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow color="#f8f8f8" height="71.41" radius="35.205" width="71.41" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

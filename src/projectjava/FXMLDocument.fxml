@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectjava.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <ImageView fitHeight="474.0" fitWidth="937.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/titleScreenBackground.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="325.0" fitWidth="592.0" layoutX="101.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/title.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="startButton" layoutX="563.0" layoutY="326.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Enter the cave" />
+      <Label layoutX="209.0" layoutY="198.0" text="Give us your name " textFill="WHITE" />
+      <TextArea fx:id="naamBox" layoutX="374.0" layoutY="188.0" prefHeight="0.0" prefWidth="200.0" />
+    </children>
+</AnchorPane>
